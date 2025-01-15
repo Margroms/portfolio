@@ -41,10 +41,11 @@ function LetsMakeThingsHappenSection() {
       </div>
       <div className="absolute -top-8 right-8 hidden md:block">
         <Image
-          src="/images/proposal_illustration.png"
+          src="/logo/logo.png"
           alt="proposal illustration"
           width={300}
           height={300}
+          className="p-8 mt-40"
         />
       </div>
     </section>

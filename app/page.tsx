@@ -117,7 +117,7 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-x-4">
-          <a href="tel:519400200" className="hidden lg:flex">
+          <a href="tel:9663377473" className="hidden lg:flex">
             <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
               +91 9663377473
             </button>
@@ -402,7 +402,7 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
+          <p className="text-left  text-xl  text-gray-500">+91 9663377473</p>
           <p className="text-left  text-xl  text-gray-500">
             admin@Margrossoftware.ca
           </p>
