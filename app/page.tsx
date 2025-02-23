@@ -376,7 +376,7 @@ export default function Home() {
 
             <span className="text-xl font-medium">
               Jordan, Brisson <br />
-              Owner of Vrb Restaurnt & Hotel
+              Owner of Hotel & Resto-Bar
             </span>
           </div>
         </main>
