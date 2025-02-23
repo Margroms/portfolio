@@ -375,8 +375,8 @@ export default function Home() {
             </div>
 
             <span className="text-xl font-medium">
-              Jordan, Brisson <br />
-              Owner of Hotel & Resto-Bar
+            Vijay Kumar <br />
+              Owner of  VRB Hotel & Resto-Bar
             </span>
           </div>
         </main>
