@@ -6,53 +6,57 @@ import Image from "next/image";
 const features = [
   {
     icon: "/icons/fast.svg",
-    title: "Fast Delivery",
+    title: "Swift Execution & Delivery",
     description:
-      "1-2 weeks delivery for most projects. Call us for more information.",
+      "From website launches to event planning, we ensure fast execution—get your project completed in just 1-2 weeks!",
   },
   {
     icon: "/icons/design.svg",
-    title: "Design & Development",
+    title: "Custom Solutions for Restaurants",
     description:
-      "We design and develop your website with the latest technologies and trends.",
+      "Whether it's a stunning website or a well-organized offline event, we design and execute solutions tailored to your needs.",
   },
   {
     icon: "/icons/scalable.svg",
-    title: "Scalability + Maintenance ",
-    description: "We offer maintenance and scalability for all websites.",
+    title: "Scalability & Continuous Support",
+    description:
+      "We help your restaurant grow—be it expanding your website, managing events, or scaling up operations effortlessly.",
   },
   {
     icon: "/icons/team.svg",
-    title: "Team of Experts",
-    description: "A team of experts ready to help you, at all times.",
+    title: "Dedicated Expert Team",
+    description:
+      "A skilled team specializing in digital and on-ground solutions to enhance your restaurant’s success.",
   },
   {
     icon: "/icons/safe.svg",
-    title: "Secure Building",
+    title: "Secure & Reliable Operations",
     description:
-      "Safe and secure building practices. To ensure your data is safe.",
+      "We ensure safe online transactions, data security, and smooth event execution with no hassles.",
   },
   {
     icon: "/icons/analytics.svg",
-    title: "Analytics Tracking",
-    description: "Track your progress with our built in analytics",
+    title: "Data-Driven Decision Making",
+    description:
+      "Gain insights into website traffic, customer engagement, and event performance with real-time analytics.",
   },
-
   {
     icon: "/icons/flexible.svg",
-    title: "Dynamic Websites",
-    description: "We build dynamic solutions that are easy to manage.",
+    title: "Adaptable & Innovative Services",
+    description:
+      "Whether online or offline, we create flexible solutions that fit your restaurant’s unique challenges and goals.",
   },
   {
     icon: "/icons/support.svg",
-    title: "24/7 Support",
+    title: "24/7 Assistance & Problem-Solving",
     description:
-      "We offer 24/7 support for all our clients. Call us for more information.",
+      "From website issues to last-minute event troubleshooting, our support team is available round the clock.",
   },
   {
     icon: "/icons/money.svg",
-    title: "Affordable Pricing",
-    description: "Affordable pricing for all our clients.",
+    title: "Budget-Friendly, High-Quality Services",
+    description:
+      "We deliver premium services—websites, marketing, and event management—at affordable rates.",
   },
 ];
 
@@ -82,17 +86,18 @@ export function ShootingStarsAndStarsBackgroundDemo() {
                     font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             >
               <Image
-                src={feature.icon}
-                width={10000}
-                height={10000}
-                alt="icon"
-                className="w-8 h-8"
-              />
+  src={feature.icon}
+  width={10000}
+  height={10000}
+  alt="icon"
+  className="w-8 h-8 fill-current text-orange-500"
+/>
             </button>
 
             <h3 className="text-xl font-bold mt-4 text-white">
               {feature.title}
             </h3>
+            <br/>
             <p className=" text-gray-200">{feature.description}</p>
           </div>
         ))}

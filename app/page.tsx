@@ -21,39 +21,39 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Web Design + Development",
+    title: "Restaurant Web Design & Development",
     description:
-      "Take your business to the next level with our web design and development services",
+      "Give your restaurant a strong online presence with a beautifully designed website that attracts and engages customers.",
   },
   {
     icon: "/images/s_1.png",
-    title: "Search Engine Optimization",
+    title: "Restaurant SEO Services",
     description:
-      "Get your website to the top of search engine results with our SEO services",
+      "Make your restaurant easily discoverable on Google and other search engines, bringing in more diners with top search rankings.",
   },
   {
     icon: "/images/s_5.png",
-    title: "Content Creation",
+    title: "Food & Menu Content Creation",
     description:
-      "Boost your brand's online presence with our social media marketing services",
+      "Entice customers with mouth-watering food photography, engaging blogs, and compelling menu descriptions that boost sales.",
   },
   {
     icon: "/images/s_3.png",
-    title: "Social Media Marketing",
+    title: "Social Media Marketing for Restaurants",
     description:
-      "Interact with your customers and increase sales with our email marketing services",
+      "Engage food lovers with eye-catching posts, promotions, and interactive campaigns that drive reservations and orders.",
   },
   {
     icon: "/images/s_4.png",
-    title: "Email Marketing",
+    title: "Restaurant Email Marketing",
     description:
-      "With our content creation services, we help businesses drive results",
+      "Keep customers coming back with personalized email campaigns featuring promotions, new menu launches, and exclusive deals.",
   },
   {
     icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
+    title: "PPC Advertising for Restaurants",
     description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+      "Maximize your restaurant’s reach with targeted ads that bring in more reservations, takeaway orders, and online deliveries.",
   },
 ];
 
@@ -404,15 +404,13 @@ export default function Home() {
           </h1>
           <p className="text-left  text-xl  text-gray-500">+91 9663377473</p>
           <p className="text-left  text-xl  text-gray-500">
-            admin@Margrossoftware.ca
+            margrosmarketing@gmail.com
           </p>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
           © 2025 Margros. All Rights Reserved.
-          <Link href="/" className="text-blue-500">
-            Privacy Policy
-          </Link>
+          
         </div>
       </footer>
     </div>

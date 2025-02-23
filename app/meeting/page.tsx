@@ -34,22 +34,35 @@ const Meeting = () => {
           </p>
 
           {[
-                {
-                  title: "Development + Design",
-                  description:
-                    "Turn your ideas into reality with our development and design services.",
-                },
-
-                {
-                  title: "Free Consultation",
-                  description:
-                    "Get expert advice on how to improve your business and increase your online presence.",
-                },
-                {
-                  title: "Technical Support",
-                  description:
-                    "Get technical support for your website or application.",
-                },
+                  {
+                    title: "Custom Website & App Development",
+                    description: "Build a stunning online presence for your restaurant with our custom web and app development services.",
+                  },
+                  {
+                    title: "Free Business Consultation",
+                    description: "Get expert advice on how to attract more customers and boost your restaurant’s online visibility.",
+                  },
+                  {
+                    title: "24/7 Technical Support",
+                    description: "Ensure your restaurant's website and app run smoothly with our round-the-clock technical support.",
+                  },
+                  {
+                    title: "Restaurant Branding & Design",
+                    description: "Create a unique brand identity with our professional design services, from logos to menus and websites.",
+                  },
+            {
+                    title: "Social Media Marketing for Restaurants",
+                    description: "Engage with food lovers and increase footfall with our restaurant-focused social media marketing services.",
+                  },
+                  {
+                    title: "Restaurant Analytics & Insights",
+                    description: "Get valuable insights on customer behavior, sales trends, and online performance to optimize your business.",
+                  },
+                  {
+                    title: "Affordable & Scalable Solutions",
+                    description: "Our cost-effective solutions grow with your restaurant, whether you're a small café or a multi-location chain.",
+                  },
+                
               ].map((item, index) => (
                 <motion.div
                   key={index}
