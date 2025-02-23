@@ -230,7 +230,7 @@ export default function Home() {
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
                   <h1 className="text-[#FF9B50] text-3xl md:text-5xl">
-                    <NumberTicker value={1000} /> +
+                    <NumberTicker value={700} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Happy Clients
                     </p>
@@ -353,7 +353,7 @@ export default function Home() {
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 
           w-[90%] md:w-[85%] lg:w-[80%] xl:w-4/5 2xl:w-[68%] mx-auto px-4 md:px-0">
           <Image
-            src={"/logo/logo.png"}
+            src={"/reviews/vrb_review.jpeg"}
             width={10000}
             height={10000}
             className=" md:w-1/3 rounded-md"
@@ -361,7 +361,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-y-5 md:w-1/2">
             <h1 className="text-lg md:text-2xl ">
-              &quot;We&apos;ve been working with Margros for over 2 years and
+              &quot;We&apos;ve been working with Margros for over 6 months and
               they&apos;ve been amazing to work with. They&apos;ve helped us
               grow our business and we couldn&apos;t be happier with the
               results. &quot;
@@ -376,7 +376,7 @@ export default function Home() {
 
             <span className="text-xl font-medium">
               Jordan, Brisson <br />
-              CEO, Atlas Massage
+              Owner of Vrb Restaurnt & Hotel
             </span>
           </div>
         </main>
