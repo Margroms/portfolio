@@ -98,13 +98,12 @@ export default function Home() {
               Services
             </ScrollLink>
 
-            <ScrollLink
-              to="process"
-              smooth={true}
+            <Link
+              href={'/offers'}
               className="hover:text-[#FF9B50]"
             >
-              Process
-            </ScrollLink>
+              Offers
+            </Link>
 
             <ScrollLink
               to="guarentees"

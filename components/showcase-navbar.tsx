@@ -50,13 +50,13 @@ xl:w-4/5
           >
             Showcase
           </Link> */}
-             <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-[#FF9B50]">
             Services
           </Link>
-          <Link href="/" className="hover:text-blue-500">
-        Process
+          <Link href="/offers" className="hover:text-[#FF9B50]">
+            Offers
           </Link>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-[#FF9B50]">
             Guarentees
           </Link>
   
