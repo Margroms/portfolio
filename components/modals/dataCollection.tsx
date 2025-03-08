@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
+import Link from "next/link";
 
 const supabaseUrl: string = "https://yuumtxoddxjciwahmdrj.supabase.co";
 const supabaseKey: string = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl1dW10eG9kZHhqY2l3YWhtZHJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg4MzY2MjgsImV4cCI6MjA1NDQxMjYyOH0.-wJE7PXyW-D_FPRGSwOrl6YuwP0IGvKiTeiesFW2dQY";
@@ -66,17 +67,34 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
             required
           />
           <div className="flex justify-between">
+          <Link href="/">
             <button
               type="button"
               className="bg-gray-400 text-white px-4 py-2 rounded"
               onClick={onClose}
               disabled={loading}
+            
             >
-              Cancel
+             
+                Close
+              
             </button>
+            </Link>
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded"
+              className="
+  py-3 
+  px-6
+  text-lg 
+  hover:bg-[#FFB982]
+  rounded-[6px]
+  border-2
+  border-black
+  text-white
+  bg-[#121212]
+  transition
+  duration-200
+     hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
               disabled={loading}
             >
               {loading ? "Submitting..." : "Submit"}
