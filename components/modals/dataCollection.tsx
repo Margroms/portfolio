@@ -16,15 +16,33 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
   const [phone, setPhone] = useState<string>("");
   const [place, setPlace] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError("");
+
+    if (!name.trim()) {
+      setError("Name cannot be empty.");
+      return;
+    }
+
+    if (!/^\d{10}$/.test(phone)) {
+      setError("Phone number must be exactly 10 digits.");
+      return;
+    }
+
+    if (!place.trim()) {
+      setError("Place cannot be empty.");
+      return;
+    }
+
     setLoading(true);
     
     const { error } = await supabase.from("users").insert([{ name, phone, place }]);
     
     if (error) {
-      alert("Error submitting data");
+      setError("Error submitting data. Please try again.");
     } else {
       setName("");
       setPhone("");
@@ -43,8 +61,9 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
           <X size={24} />
         </button>
         <h2 className="text-xl font-semibold mb-4 text-center">
-  Help Us Know You Better! Enter Your Details Below
-</h2>
+          Help Us Know You Better! Enter Your Details Below
+        </h2>
+        {error && <p className="text-red-500 text-sm text-center mb-2">{error}</p>}
         <form onSubmit={handleSubmit} className="flex flex-col space-y-3">
           <input
             type="text"
