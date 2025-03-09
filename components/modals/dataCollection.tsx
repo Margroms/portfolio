@@ -3,7 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import { X } from "lucide-react";
 
 const supabaseUrl: string = "https://yuumtxoddxjciwahmdrj.supabase.co";
-const supabaseKey: string = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...";
+const supabaseKey: string = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl1dW10eG9kZHhqY2l3YWhtZHJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg4MzY2MjgsImV4cCI6MjA1NDQxMjYyOH0.-wJE7PXyW-D_FPRGSwOrl6YuwP0IGvKiTeiesFW2dQY";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface DataCollectionModalProps {
