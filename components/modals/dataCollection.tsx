@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
+import { X } from "lucide-react";
 import Link from "next/link";
 
 const supabaseUrl: string = "https://yuumtxoddxjciwahmdrj.supabase.co";
@@ -26,7 +27,6 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
     if (error) {
       alert("Error submitting data");
     } else {
-      alert("Data submitted successfully");
       setName("");
       setPhone("");
       setPlace("");
@@ -38,16 +38,21 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-        <h2 className="text-xl font-semibold mb-4">Enter Your Details</h2>
-        <form onSubmit={handleSubmit}>
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm relative">
+        <Link href="/">
+          <button className="absolute top-5 right-5 text-black text-lg">
+            <X size={24} />
+          </button>
+        </Link>
+        <h2 className="text-xl font-semibold mb-4 text-center">Enter Your Details</h2>
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-3">
           <input
             type="text"
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full p-2 border rounded mb-2"
+            className="w-full p-2 border rounded"
             required
           />
           <input
@@ -55,7 +60,7 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
             placeholder="Your Phone Number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="w-full p-2 border rounded mb-2"
+            className="w-full p-2 border rounded"
             required
           />
           <input
@@ -63,47 +68,20 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
             placeholder="Your Place"
             value={place}
             onChange={(e) => setPlace(e.target.value)}
-            className="w-full p-2 border rounded mb-4"
+            className="w-full p-2 border rounded"
             required
           />
-          <div className="flex justify-between">
-          <Link href="/">
-            <button
-              type="button"
-              className="bg-gray-400 text-white px-4 py-2 rounded"
-              onClick={onClose}
-              disabled={loading}
-            
-            >
-             
-                Close
-              
-            </button>
-            </Link>
-            <button
-              type="submit"
-              className="
-  py-3 
-  px-6
-  text-lg 
-  hover:bg-[#FFB982]
-  rounded-[6px]
-  border-2
-  border-black
-  text-white
-  bg-[#121212]
-  transition
-  duration-200
-     hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
-              disabled={loading}
-            >
-              {loading ? "Submitting..." : "Submit"}
-            </button>
-          </div>
+          <button
+            type="submit"
+            className="py-2 px-4 text-lg hover:bg-[#FFB982] rounded-[6px] border-2 border-black text-white bg-[#121212] transition duration-200 mx-auto block hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
+            disabled={loading}
+          >
+            {loading ? "Submitting..." : "Submit"}
+          </button>
         </form>
       </div>
     </div>
   );
-}
+};
 
 export default DataCollectionModal;
