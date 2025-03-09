@@ -53,9 +53,9 @@ xl:w-4/5
           <Link href="/" className="hover:text-[#FF9B50]">
             Services
           </Link>
-          <Link href="/offers" className="hover:text-[#FF9B50]">
+          {/* <Link href="/offers" className="hover:text-[#FF9B50]">
             Offers
-          </Link>
+          </Link> */}
           <Link href="/" className="hover:text-[#FF9B50]">
             Guarentees
           </Link>

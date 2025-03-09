@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
 import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
@@ -17,6 +17,8 @@ import { IconStarFilled } from "@tabler/icons-react";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 
+import { useState, useEffect } from "react";
+import DataCollectionModal from "@/components/modals/dataCollection";
 
 const services = [
   {
@@ -58,6 +60,11 @@ const services = [
 ];
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    setIsModalOpen(true);
+  }, []);
   return (
     <div
       className="overflow-clip 
@@ -97,13 +104,13 @@ export default function Home() {
             >
               Services
             </ScrollLink>
-
+{/* 
             <Link
               href={'/offers'}
               className="hover:text-[#FF9B50]"
             >
               Offers
-            </Link>
+            </Link> */}
 
             <ScrollLink
               to="guarentees"
@@ -142,6 +149,7 @@ export default function Home() {
           </Link>
         </div>
       </Element>
+      <DataCollectionModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <main className="md:pb-10">
         <div className="px-4 md:px-0 w-[90%] md:w-[85%] lg:w-[80%] xl:w-4/5 2xl:w-[68%] mx-auto mt-14">

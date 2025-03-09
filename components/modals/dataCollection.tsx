@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { X } from "lucide-react";
-import Link from "next/link";
 
 const supabaseUrl: string = "https://yuumtxoddxjciwahmdrj.supabase.co";
-const supabaseKey: string = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl1dW10eG9kZHhqY2l3YWhtZHJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg4MzY2MjgsImV4cCI6MjA1NDQxMjYyOH0.-wJE7PXyW-D_FPRGSwOrl6YuwP0IGvKiTeiesFW2dQY";
+const supabaseKey: string = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface DataCollectionModalProps {
@@ -38,14 +37,14 @@ const DataCollectionModal: React.FC<DataCollectionModalProps> = ({ isOpen, onClo
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm relative">
-        <Link href="/">
-          <button className="absolute top-5 right-5 text-black text-lg">
-            <X size={24} />
-          </button>
-        </Link>
-        <h2 className="text-xl font-semibold mb-4 text-center">Enter Your Details</h2>
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center p-10 z-50">
+      <div className="bg-white p-6 rounded-lg shadow-2xl w-full max-w-sm relative">
+        <button onClick={onClose} className="absolute top-3 right-3 text-black text-lg">
+          <X size={24} />
+        </button>
+        <h2 className="text-xl font-semibold mb-4 text-center">
+  Help Us Know You Better! Enter Your Details Below
+</h2>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-3">
           <input
             type="text"
