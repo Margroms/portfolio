@@ -48,7 +48,7 @@ const Meeting = () => {
                   },
                   {
                     title: "Restaurant Branding & Design",
-                    description: "Create a unique brand identity with our professional design services, from logos to menus and websites.",
+                    description: "Create a unique Restaruant identity with our professional design services, from logos to menus and websites.",
                   },
             {
                     title: "Social Media Marketing for Restaurants",
