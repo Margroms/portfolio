@@ -237,7 +237,7 @@ export default function Home() {
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
                   <h1 className="text-[#FF9B50] text-3xl md:text-5xl">
-                    <NumberTicker value={700} /> +
+                    <NumberTicker value={15} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Happy Clients
                     </p>
@@ -248,7 +248,7 @@ export default function Home() {
 
                 <div className="flex-1 min-w-0">
                   <h1 className="text-[#FF9B50] text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} /> +
+                    <NumberTicker value={30} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Projects Completed
                     </p>
@@ -263,11 +263,27 @@ export default function Home() {
                 direction="left"
                 items={[
                   {
-                    logo: "/logo/logo.png",
+                    logo: "/logo/logo1.png",
                     name: "Logo",
                   },
                   {
-                    logo: "/logo/logo.png",
+                    logo: "/logo/logo2.png",
+                    name: "Logo",
+                  },
+                  {
+                    logo: "/logo/logo3.png",
+                    name: "Logo",
+                  },
+                  {
+                    logo: "/logo/logo4.png",
+                    name: "Logo",
+                  },
+                  {
+                    logo: "/logo/logo5.png",
+                    name: "Logo",
+                  },
+                  {
+                    logo: "/logo/logo6.png",
                     name: "Logo",
                   },
                 ]}
