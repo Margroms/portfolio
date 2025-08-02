@@ -399,7 +399,7 @@ export default function Home() {
 
             <span className="text-xl font-medium">
             Vijay Kumar <br />
-              Owner of  VRB Hotel & Resto-Bar
+              Owner of  VRB Hotel & Resto Bar
             </span>
           </div>
         </main>
