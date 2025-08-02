@@ -20,8 +20,27 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="flex md:justify-center gap-x-4 mt-10">
-        © 2024 Margros. All Rights Reserved.
+      <div className="flex flex-col md:flex-row md:justify-center items-center gap-4 mt-10">
+        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+          <Link href="/terms" className="hover:text-[#FFB982] transition-colors">
+            Terms of Service
+          </Link>
+          <span className="hidden md:inline">|</span>
+          <Link href="/privacy" className="hover:text-[#FFB982] transition-colors">
+            Privacy Policy
+          </Link>
+          <span className="hidden md:inline">|</span>
+          <Link href="/refund" className="hover:text-[#FFB982] transition-colors">
+            Cancellation & Refund
+          </Link>
+          <span className="hidden md:inline">|</span>
+          <Link href="/shipping" className="hover:text-[#FFB982] transition-colors">
+            Shipping & Delivery
+          </Link>
+        </div>
+        <div className="text-sm text-gray-500">
+          © 2024 Margros. All Rights Reserved.
+        </div>
       </div>
     </footer>
   );
