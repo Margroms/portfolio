@@ -94,7 +94,7 @@ const RefundPolicy = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-3 text-[#121212]">Dispute Resolution</h3>
                   <p className="leading-relaxed">
-                    We encourage open communication to resolve any concerns. If you're unsatisfied with our services, please contact us immediately so we can work together to find a solution before considering cancellation.
+                    We encourage open communication to resolve any concerns. If you&rsquo;re unsatisfied with our services, please contact us immediately so we can work together to find a solution before considering cancellation.
                   </p>
                 </div>
 
