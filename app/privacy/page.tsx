@@ -93,7 +93,7 @@ const PrivacyPolicy = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-3 text-[#121212]">Your Rights</h3>
                   <p className="leading-relaxed">
-                    You have the right to access, update, or delete your personal information. You may also request data portability or object to certain processing activities. Contact us at <a href="mailto:contact@margros.com" className="text-[#FFB982] hover:underline">contact@margros.com</a> for any privacy-related requests.
+                    You have the right to access, update, or delete your personal information. You may also request data portability or object to certain processing activities. Contact us at <a href="mailto:margrosmarketing@gmail.com" className="text-[#FFB982] hover:underline">margrosmarketing@gmail.com</a> for any privacy-related requests.
                   </p>
                 </div>
 
@@ -120,7 +120,7 @@ const PrivacyPolicy = () => {
                 If you have any questions about this privacy policy, please contact us:
               </p>
               <div className="space-y-2 text-gray-700">
-                <p><strong>Email:</strong> <a href="mailto:contact@margros.com" className="text-[#FFB982] hover:underline">contact@margros.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:margrosmarketing@gmail.com" className="text-[#FFB982] hover:underline">margrosmarketing@gmail.com</a></p>
                 <p><strong>Phone:</strong> <a href="tel:+919663377473" className="text-[#FFB982] hover:underline">+91 9663377473</a></p>
                 <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM IST</p>
               </div>
