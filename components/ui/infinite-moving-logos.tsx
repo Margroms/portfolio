@@ -65,7 +65,7 @@ export const InfiniteMovingLogos = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "100s");
+        containerRef.current.style.setProperty("--animation-duration", "180s");
       }
     }
   };
@@ -87,16 +87,8 @@ export const InfiniteMovingLogos = ({
       >
         {items.map((item, idx) => (
           <li
-            className="
-        
-              flex items-center
-              
-              flex-shrink-00 px-8 "
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-            key={item.name}
+            className="flex items-center flex-shrink-0 px-8"
+            key={`${item.name}-${idx}`}
           >
             <div>
               <Image
@@ -105,8 +97,8 @@ export const InfiniteMovingLogos = ({
                 width={1000}
                 height={1000}
                 className="
-                w-40
-                md:w-60
+                w-24
+                md:w-36
                  "
               />
             </div>

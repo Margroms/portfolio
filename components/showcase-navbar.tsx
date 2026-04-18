@@ -57,7 +57,7 @@ xl:w-4/5
             Offers
           </Link> */}
           <Link href="/" className="hover:text-[#FF9B50]">
-            Guarentees
+            Guarantees
           </Link>
   
         </div>
