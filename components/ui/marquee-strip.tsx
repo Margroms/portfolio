@@ -46,7 +46,8 @@ const Separator = () => (
 
 function ScrollingStrip({ items, direction = "left" }: { items: Item[]; direction?: "left" | "right" }) {
   const doubled = [...items, ...items];
-  const duration = items.length * 4;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const duration = items.length * (isMobile ? 2 : 4);
 
   return (
     <div className="w-full bg-[#121212] py-3 overflow-hidden relative">

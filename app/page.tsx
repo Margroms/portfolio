@@ -239,17 +239,18 @@ export default function Home() {
 						{services.map((service) => (
 							<div
 								key={service.title}
-								className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-6 cursor-pointer hover:scale-105 transition-transform rounded-xl"
+								className="relative flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-6 cursor-pointer hover:scale-105 transition-transform rounded-xl overflow-hidden"
 							>
+								<div className="absolute inset-0 bg-[repeating-linear-gradient(to_bottom,rgb(0_0_0/0.06)_0,rgb(0_0_0/0.06)_1px,transparent_1px,transparent_0.4rem)] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)] pointer-events-none rounded-xl" />
 								<Image
 									src={service.icon}
 									width={10000}
 									height={10000}
-									className="object-contain bg-gray-100 p-6 w-full h-48 rounded-md"
+									className="object-contain bg-gray-100 p-6 w-full h-48 rounded-md relative z-10"
 									alt={service.title}
 								/>
-								<h3 className="text-xl font-semibold">{service.title}</h3>
-								<p className="text-gray-500">{service.description}</p>
+								<h3 className="text-xl font-semibold relative z-10">{service.title}</h3>
+								<p className="text-gray-500 relative z-10">{service.description}</p>
 							</div>
 						))}
 					</div>
